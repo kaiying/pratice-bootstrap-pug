@@ -1,0 +1,16 @@
+extends _layouts/layout.pug
+
+block append content
+  include _sample/nav.pug
+  .container
+    h1 sample
+
+    // - alert
+    .col-sm-12
+      h2 alert
+      include _sample/alert.pug
+
+    .col-sm-12
+      h2 badges
+      include _sample/badges.pug
+      

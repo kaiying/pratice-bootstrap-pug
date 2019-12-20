@@ -1,0 +1,18 @@
+doctype html
+html(xmlns="http://www.w3.org/1999/xhtml", xml:lang="zh-tw", lang="zh-tw")
+  head
+    title 
+      block title
+    block meta
+      include meta.pug
+  body
+    // - { content }
+    .wrapper
+      block content
+
+    // - { footer }
+    block footer
+      include footer.pug
+
+    // - { load js }
+    block script
